@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>665</width>
+    <height>627</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #444444;
+color: white;
+font-family: Franklin Gothic Medium</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout_9">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="5,0">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_8">
+          <item>
+           <widget class="QFrame" name="frame_2">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_3">
+             <item row="0" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout_7">
+               <item>
+                <layout class="QVBoxLayout" name="verticalLayout_3">
+                 <item>
+                  <widget class="QLabel" name="search_label">
+                   <property name="styleSheet">
+                    <string notr="true">font-size: 18pt;
+font-weight: bold;
+border: none;
+background-color:none;
+border-bottom: 2px solid white;</string>
+                   </property>
+                   <property name="text">
+                    <string>Поиск</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0">
+                   <property name="spacing">
+                    <number>20</number>
+                   </property>
+                   <property name="sizeConstraint">
+                    <enum>QLayout::SetFixedSize</enum>
+                   </property>
+                   <property name="bottomMargin">
+                    <number>30</number>
+                   </property>
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_6">
+                     <property name="spacing">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="rfid_label">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>17</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>17</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">margin-left: 10px; 
+font-size: 12pt;
+font-weight: bold;
+border: none;
+background-color:none;</string>
+                       </property>
+                       <property name="text">
+                        <string>RFID код</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="rfid_input">
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgba(255,255,255,30);
+border: 1px solid rgba(255,255,255,40);
+border-radius: 7px;
+padding: 2px 5px
+</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_5">
+                     <property name="spacing">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="name_label">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>17</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>17</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">margin-left: 10px; 
+font-size: 12pt;
+font-weight: bold;
+border: none;
+background-color:none;</string>
+                       </property>
+                       <property name="text">
+                        <string>ФИО</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLineEdit" name="name_input">
+                       <property name="styleSheet">
+                        <string notr="true">background-color: rgba(255,255,255,30);
+border: 1px solid rgba(255,255,255,40);
+border-radius: 7px;
+padding: 2px 5px
+</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <layout class="QVBoxLayout" name="verticalLayout_4">
+                     <property name="spacing">
+                      <number>0</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="status_label">
+                       <property name="minimumSize">
+                        <size>
+                         <width>0</width>
+                         <height>17</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>16777215</width>
+                         <height>17</height>
+                        </size>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">margin-left: 10px; 
+font-size: 12pt;
+font-weight: bold;
+border: none;
+background-color:none;</string>
+                       </property>
+                       <property name="text">
+                        <string>Статус</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QComboBox" name="status_box">
+                       <property name="styleSheet">
+                        <string notr="true">
+
+background-color: rgba(255,255,255,30);
+border: 1px solid rgba(255,255,255,40);
+border-radius: 7px;
+padding: 2px 5px;
+</string>
+                       </property>
+                       <item>
+                        <property name="text">
+                         <string>Нет значения</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Вход</string>
+                        </property>
+                       </item>
+                       <item>
+                        <property name="text">
+                         <string>Выход</string>
+                        </property>
+                       </item>
+                      </widget>
+                     </item>
+                    </layout>
+                   </item>
+                   <item>
+                    <widget class="QTabWidget" name="interval_wigdet">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>100</height>
+                      </size>
+                     </property>
+                     <property name="maximumSize">
+                      <size>
+                       <width>16777215</width>
+                       <height>100</height>
+                      </size>
+                     </property>
+                     <property name="styleSheet">
+                      <string notr="true">QTabWidget{
+	margin: 4px;
+}
+
+
+QTabWidget::pane { 
+	border-top: 2px solid white;
+	margin-top: 4px;
+}
+
+
+
+
+
+
+/*11111111111111111111*/
+
+
+QTabBar::tab{
+	color: white;
+	border-radius: 5px;
+	padding: 2px 15px;
+	margin: 0 5px;
+}
+
+QTabBar::tab:selected{
+	background-color: rgb(31, 184, 107);
+}
+
+QTabBar::tab:selected:hover{
+	background-color: rgba(31, 184, 107, 95);
+}
+
+QTabBar::tab:!selected{
+	background-color: none;
+	border: 1px solid white;
+}
+
+QTabBar::tab:!selected:hover{
+	background-color: none;
+	border: 1px solid rgba(255,255,255, 80);
+}
+
+</string>
+                     </property>
+                     <property name="tabPosition">
+                      <enum>QTabWidget::North</enum>
+                     </property>
+                     <property name="currentIndex">
+                      <number>1</number>
+                     </property>
+                     <property name="elideMode">
+                      <enum>Qt::ElideNone</enum>
+                     </property>
+                     <property name="usesScrollButtons">
+                      <bool>true</bool>
+                     </property>
+                     <property name="documentMode">
+                      <bool>false</bool>
+                     </property>
+                     <widget class="QWidget" name="tab">
+                      <attribute name="title">
+                       <string>Интервал</string>
+                      </attribute>
+                      <layout class="QGridLayout" name="gridLayout_2">
+                       <item row="0" column="0">
+                        <widget class="QComboBox" name="interval_box">
+                         <property name="styleSheet">
+                          <string notr="true">
+QComboBox {
+background-color: rgba(255,255,255,30);
+border: 1px solid rgba(255,255,255,40);
+border-radius: 7px;
+padding: 2px 5px;
+}
+
+</string>
+                         </property>
+                         <property name="insertPolicy">
+                          <enum>QComboBox::InsertAtTop</enum>
+                         </property>
+                         <property name="sizeAdjustPolicy">
+                          <enum>QComboBox::AdjustToContentsOnFirstShow</enum>
+                         </property>
+                         <item>
+                          <property name="text">
+                           <string>Нет значения</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>Вход</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>Выход</string>
+                          </property>
+                         </item>
+                        </widget>
+                       </item>
+                      </layout>
+                     </widget>
+                     <widget class="QWidget" name="tab_2">
+                      <attribute name="title">
+                       <string>Дата</string>
+                      </attribute>
+                      <layout class="QGridLayout" name="gridLayout">
+                       <item row="0" column="0">
+                        <layout class="QVBoxLayout" name="verticalLayout_2">
+                         <item>
+                          <layout class="QHBoxLayout" name="horizontalLayout">
+                           <item>
+                            <widget class="QLabel" name="ot_label">
+                             <property name="styleSheet">
+                              <string notr="true">margin-left: 10px; 
+font-size: 12pt;
+font-weight: bold;
+border: none;
+background-color:none;</string>
+                             </property>
+                             <property name="text">
+                              <string>От</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QDateTimeEdit" name="datetime_input">
+                             <property name="styleSheet">
+                              <string notr="true">
+background-color: rgba(255,255,255,30);
+border: 1px solid rgba(255,255,255,40);
+border-radius: 7px;
+padding: 2px 5px;
+
+
+</string>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignCenter</set>
+                             </property>
+                             <property name="buttonSymbols">
+                              <enum>QAbstractSpinBox::NoButtons</enum>
+                             </property>
+                             <property name="dateTime">
+                              <datetime>
+                               <hour>0</hour>
+                               <minute>0</minute>
+                               <second>0</second>
+                               <year>2025</year>
+                               <month>1</month>
+                               <day>1</day>
+                              </datetime>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                         <item>
+                          <layout class="QHBoxLayout" name="horizontalLayout_2">
+                           <item>
+                            <widget class="QLabel" name="do_label">
+                             <property name="styleSheet">
+                              <string notr="true">margin-left: 10px; 
+font-size: 12pt;
+font-weight: bold;
+border: none;
+background-color:none;</string>
+                             </property>
+                             <property name="text">
+                              <string>До</string>
+                             </property>
+                            </widget>
+                           </item>
+                           <item>
+                            <widget class="QDateTimeEdit" name="datetime_input_two">
+                             <property name="styleSheet">
+                              <string notr="true">
+background-color: rgba(255,255,255,30);
+border: 1px solid rgba(255,255,255,40);
+border-radius: 7px;
+padding: 2px 5px;
+
+
+</string>
+                             </property>
+                             <property name="alignment">
+                              <set>Qt::AlignCenter</set>
+                             </property>
+                             <property name="buttonSymbols">
+                              <enum>QAbstractSpinBox::NoButtons</enum>
+                             </property>
+                             <property name="specialValueText">
+                              <string/>
+                             </property>
+                             <property name="dateTime">
+                              <datetime>
+                               <hour>0</hour>
+                               <minute>0</minute>
+                               <second>0</second>
+                               <year>2025</year>
+                               <month>1</month>
+                               <day>1</day>
+                              </datetime>
+                             </property>
+                            </widget>
+                           </item>
+                          </layout>
+                         </item>
+                        </layout>
+                       </item>
+                      </layout>
+                     </widget>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="search_button">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="minimumSize">
+                    <size>
+                     <width>0</width>
+                     <height>29</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>29</height>
+                    </size>
+                   </property>
+                   <property name="styleSheet">
+                    <string notr="true">QPushButton{
+	background-color: rgb(31, 184, 107);
+	color: white;
+	border-radius: 5px;
+}
+
+QPushButton:hover{
+	background-color: rgba(31, 184, 107, 95);
+}
+
+QPushButton:pressed{
+	background-color: rgba(31, 184, 107, 85);
+}
+
+</string>
+                   </property>
+                   <property name="text">
+                    <string>Найти</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableView" name="tableView"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QFrame" name="frame_3">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>24</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">border: 1px solid white;</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="status_label_2">
+          <property name="maximumSize">
+           <size>
+            <width>50</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>СТАТУС</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>665</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="file_menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="data_refresh"/>
+    <addaction name="save_bttn"/>
+    <addaction name="options_bttn"/>
+    <addaction name="exit_bttn"/>
+   </widget>
+   <widget class="QMenu" name="change_menu">
+    <property name="title">
+     <string>Изменить</string>
+    </property>
+    <addaction name="add_bttn"/>
+    <addaction name="edit_bttn"/>
+    <addaction name="delete_bttn"/>
+    <addaction name="clear_search_bttn"/>
+   </widget>
+   <widget class="QMenu" name="add_menu">
+    <property name="title">
+     <string>Добавить</string>
+    </property>
+    <addaction name="add_user"/>
+    <addaction name="add_few_bttn"/>
+   </widget>
+   <widget class="QMenu" name="view_menu">
+    <property name="title">
+     <string>Вид</string>
+    </property>
+   </widget>
+   <addaction name="file_menu"/>
+   <addaction name="change_menu"/>
+   <addaction name="view_menu"/>
+   <addaction name="add_menu"/>
+  </widget>
+  <action name="add_user">
+   <property name="text">
+    <string>Добавить пользователя</string>
+   </property>
+  </action>
+  <action name="add_few_bttn">
+   <property name="text">
+    <string>Добавить несколько</string>
+   </property>
+  </action>
+  <action name="data_refresh">
+   <property name="text">
+    <string>Обновить данные</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>Изменить</string>
+   </property>
+  </action>
+  <action name="save_bttn">
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+  </action>
+  <action name="add_bttn">
+   <property name="text">
+    <string>Добавить запись</string>
+   </property>
+  </action>
+  <action name="exit_bttn">
+   <property name="text">
+    <string>Выход</string>
+   </property>
+  </action>
+  <action name="edit_bttn">
+   <property name="text">
+    <string>Редактировать запись</string>
+   </property>
+  </action>
+  <action name="delete_bttn">
+   <property name="text">
+    <string>Удалить запись</string>
+   </property>
+  </action>
+  <action name="clear_search_bttn">
+   <property name="text">
+    <string>Очистить поля поиска</string>
+   </property>
+  </action>
+  <action name="options_bttn">
+   <property name="text">
+    <string>Настройки</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>rfid_input</tabstop>
+  <tabstop>name_input</tabstop>
+  <tabstop>status_box</tabstop>
+  <tabstop>interval_wigdet</tabstop>
+  <tabstop>datetime_input</tabstop>
+  <tabstop>datetime_input_two</tabstop>
+  <tabstop>search_button</tabstop>
+  <tabstop>tableView</tabstop>
+  <tabstop>interval_box</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
