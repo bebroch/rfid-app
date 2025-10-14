@@ -1,21 +1,14 @@
 {
-  "name": "test.pyqt",
-  "version": "1.0.0",
-  "description": "Требуется установить PyQt6:",
-  "main": "index.js",
-  "scripts": {
-    "ui_compile": "pyuic6 ./ui/main_window.ui -o ./src/main_window.py"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bebroch/edugate-app.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/bebroch/edugate-app/issues"
-  },
-  "homepage": "https://github.com/bebroch/edugate-app#readme"
+    "name": "rfid-app",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "start": "python ./src/app.py",
+        "ui_compile": "pyuic6 ./ui/main_window.ui -o ./src/main_window.py",
+        "setup_venv": "python -m venv packenv"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bebroch/edugate-app.git"
+    }
 }
