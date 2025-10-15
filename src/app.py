@@ -2,7 +2,7 @@ import sys
 
 from PyQt6.QtWidgets import QApplication, QMainWindow, QHeaderView
 
-from main_window import Ui_MainWindow
+from ui.main_window import Ui_MainWindow
 from table_model import TableModel
 
 test_data = [
