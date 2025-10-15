@@ -4,7 +4,7 @@
     "description": "",
     "scripts": {
         "start": "python -B ./src/app.py",
-        "ui_compile": "pyuic6 ./ui/main_window.ui -o ./src/main_window.py",
+        "ui_compile": "pyuic6 ./src/ui/main_window.ui -o ./src/ui/main_window.py",
         "setup_venv": "python -m venv packenv"
     },
     "repository": {

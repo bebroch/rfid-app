@@ -3,3 +3,4 @@ dist
 packenv
 src/__pycache__
 .vscode
+rfid_database.db

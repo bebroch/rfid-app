@@ -199,7 +199,7 @@ background-color:none;</string>
                       </widget>
                      </item>
                      <item>
-                      <widget class="QComboBox" name="status_box">
+                      <widget class="QComboBox" name="enter_status">
                        <property name="styleSheet">
                         <string notr="true">
 
@@ -327,6 +327,9 @@ padding: 2px 5px;
 
 </string>
                          </property>
+                         <property name="currentText">
+                          <string>Нет значения</string>
+                         </property>
                          <property name="insertPolicy">
                           <enum>QComboBox::InsertPolicy::InsertAtTop</enum>
                          </property>
@@ -340,12 +343,32 @@ padding: 2px 5px;
                          </item>
                          <item>
                           <property name="text">
-                           <string>Вход</string>
+                           <string>Час</string>
                           </property>
                          </item>
                          <item>
                           <property name="text">
-                           <string>Выход</string>
+                           <string>3 часа</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>День</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>3 дня</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>Неделя</string>
+                          </property>
+                         </item>
+                         <item>
+                          <property name="text">
+                           <string>Месяц</string>
                           </property>
                          </item>
                         </widget>
@@ -363,6 +386,12 @@ padding: 2px 5px;
                           <layout class="QHBoxLayout" name="horizontalLayout">
                            <item>
                             <widget class="QLabel" name="ot_label">
+                             <property name="maximumSize">
+                              <size>
+                               <width>50</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
                              <property name="styleSheet">
                               <string notr="true">margin-left: 10px; 
 font-size: 12pt;
@@ -403,6 +432,12 @@ padding: 2px 5px;
                                <day>1</day>
                               </datetime>
                              </property>
+                             <property name="displayFormat">
+                              <string>H:mm dd.MM.yyyy</string>
+                             </property>
+                             <property name="calendarPopup">
+                              <bool>false</bool>
+                             </property>
                             </widget>
                            </item>
                           </layout>
@@ -411,6 +446,12 @@ padding: 2px 5px;
                           <layout class="QHBoxLayout" name="horizontalLayout_2">
                            <item>
                             <widget class="QLabel" name="do_label">
+                             <property name="maximumSize">
+                              <size>
+                               <width>50</width>
+                               <height>16777215</height>
+                              </size>
+                             </property>
                              <property name="styleSheet">
                               <string notr="true">margin-left: 10px; 
 font-size: 12pt;
@@ -453,6 +494,9 @@ padding: 2px 5px;
                                <month>1</month>
                                <day>1</day>
                               </datetime>
+                             </property>
+                             <property name="displayFormat">
+                              <string>H:mm dd.MM.yyyy</string>
                              </property>
                             </widget>
                            </item>
@@ -673,7 +717,7 @@ QPushButton:pressed{
  <tabstops>
   <tabstop>rfid_input</tabstop>
   <tabstop>name_input</tabstop>
-  <tabstop>status_box</tabstop>
+  <tabstop>enter_status</tabstop>
   <tabstop>interval_wigdet</tabstop>
   <tabstop>datetime_input</tabstop>
   <tabstop>datetime_input_two</tabstop>
