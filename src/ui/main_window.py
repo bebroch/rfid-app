@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file './ui/main_window.ui'
+# Form implementation generated from reading ui file './src/ui/main_window.ui'
 #
 # Created by: PyQt6 UI code generator 6.9.1
 #
@@ -333,8 +333,8 @@ class Ui_MainWindow(object):
         MainWindow.setMenuBar(self.menubar)
         self.add_user = QtGui.QAction(parent=MainWindow)
         self.add_user.setObjectName("add_user")
-        self.add_few_bttn = QtGui.QAction(parent=MainWindow)
-        self.add_few_bttn.setObjectName("add_few_bttn")
+        self.add_users = QtGui.QAction(parent=MainWindow)
+        self.add_users.setObjectName("add_users")
         self.data_refresh = QtGui.QAction(parent=MainWindow)
         self.data_refresh.setObjectName("data_refresh")
         self.action_4 = QtGui.QAction(parent=MainWindow)
@@ -362,7 +362,7 @@ class Ui_MainWindow(object):
         self.change_menu.addAction(self.delete_bttn)
         self.change_menu.addAction(self.clear_search_bttn)
         self.add_menu.addAction(self.add_user)
-        self.add_menu.addAction(self.add_few_bttn)
+        self.add_menu.addAction(self.add_users)
         self.menubar.addAction(self.file_menu.menuAction())
         self.menubar.addAction(self.change_menu.menuAction())
         self.menubar.addAction(self.view_menu.menuAction())
@@ -404,7 +404,7 @@ class Ui_MainWindow(object):
         self.add_menu.setTitle(_translate("MainWindow", "Добавить"))
         self.view_menu.setTitle(_translate("MainWindow", "Вид"))
         self.add_user.setText(_translate("MainWindow", "Добавить пользователя"))
-        self.add_few_bttn.setText(_translate("MainWindow", "Добавить несколько"))
+        self.add_users.setText(_translate("MainWindow", "Добавить несколько"))
         self.data_refresh.setText(_translate("MainWindow", "Обновить данные"))
         self.action_4.setText(_translate("MainWindow", "Изменить"))
         self.save_bttn.setText(_translate("MainWindow", "Сохранить"))

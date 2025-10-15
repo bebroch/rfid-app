@@ -41,10 +41,10 @@ font-family: Franklin Gothic Medium</string>
           <item>
            <widget class="QFrame" name="frame_2">
             <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
+             <enum>QFrame::Shape::StyledPanel</enum>
             </property>
             <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
+             <enum>QFrame::Shadow::Raised</enum>
             </property>
             <layout class="QGridLayout" name="gridLayout_3">
              <item row="0" column="0">
@@ -64,7 +64,7 @@ border-bottom: 2px solid white;</string>
                     <string>Поиск</string>
                    </property>
                    <property name="alignment">
-                    <set>Qt::AlignCenter</set>
+                    <set>Qt::AlignmentFlag::AlignCenter</set>
                    </property>
                   </widget>
                  </item>
@@ -74,7 +74,7 @@ border-bottom: 2px solid white;</string>
                     <number>20</number>
                    </property>
                    <property name="sizeConstraint">
-                    <enum>QLayout::SetFixedSize</enum>
+                    <enum>QLayout::SizeConstraint::SetFixedSize</enum>
                    </property>
                    <property name="bottomMargin">
                     <number>30</number>
@@ -295,13 +295,13 @@ QTabBar::tab:!selected:hover{
 </string>
                      </property>
                      <property name="tabPosition">
-                      <enum>QTabWidget::North</enum>
+                      <enum>QTabWidget::TabPosition::North</enum>
                      </property>
                      <property name="currentIndex">
                       <number>1</number>
                      </property>
                      <property name="elideMode">
-                      <enum>Qt::ElideNone</enum>
+                      <enum>Qt::TextElideMode::ElideNone</enum>
                      </property>
                      <property name="usesScrollButtons">
                       <bool>true</bool>
@@ -328,10 +328,10 @@ padding: 2px 5px;
 </string>
                          </property>
                          <property name="insertPolicy">
-                          <enum>QComboBox::InsertAtTop</enum>
+                          <enum>QComboBox::InsertPolicy::InsertAtTop</enum>
                          </property>
                          <property name="sizeAdjustPolicy">
-                          <enum>QComboBox::AdjustToContentsOnFirstShow</enum>
+                          <enum>QComboBox::SizeAdjustPolicy::AdjustToContentsOnFirstShow</enum>
                          </property>
                          <item>
                           <property name="text">
@@ -388,10 +388,10 @@ padding: 2px 5px;
 </string>
                              </property>
                              <property name="alignment">
-                              <set>Qt::AlignCenter</set>
+                              <set>Qt::AlignmentFlag::AlignCenter</set>
                              </property>
                              <property name="buttonSymbols">
-                              <enum>QAbstractSpinBox::NoButtons</enum>
+                              <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
                              </property>
                              <property name="dateTime">
                               <datetime>
@@ -436,10 +436,10 @@ padding: 2px 5px;
 </string>
                              </property>
                              <property name="alignment">
-                              <set>Qt::AlignCenter</set>
+                              <set>Qt::AlignmentFlag::AlignCenter</set>
                              </property>
                              <property name="buttonSymbols">
-                              <enum>QAbstractSpinBox::NoButtons</enum>
+                              <enum>QAbstractSpinBox::ButtonSymbols::NoButtons</enum>
                              </property>
                              <property name="specialValueText">
                               <string/>
@@ -518,7 +518,7 @@ QPushButton:pressed{
           <item>
            <spacer name="verticalSpacer">
             <property name="orientation">
-             <enum>Qt::Vertical</enum>
+             <enum>Qt::Orientation::Vertical</enum>
             </property>
             <property name="sizeHint" stdset="0">
              <size>
@@ -536,7 +536,7 @@ QPushButton:pressed{
            <number>1</number>
           </property>
           <property name="gridStyle">
-           <enum>Qt::SolidLine</enum>
+           <enum>Qt::PenStyle::SolidLine</enum>
           </property>
          </widget>
         </item>
@@ -602,7 +602,7 @@ QPushButton:pressed{
      <string>Добавить</string>
     </property>
     <addaction name="add_user"/>
-    <addaction name="add_few_bttn"/>
+    <addaction name="add_users"/>
    </widget>
    <widget class="QMenu" name="view_menu">
     <property name="title">
@@ -619,7 +619,7 @@ QPushButton:pressed{
     <string>Добавить пользователя</string>
    </property>
   </action>
-  <action name="add_few_bttn">
+  <action name="add_users">
    <property name="text">
     <string>Добавить несколько</string>
    </property>
