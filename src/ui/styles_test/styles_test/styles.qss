@@ -1,0 +1,137 @@
+    /* Общий фон окна */
+    QMainWindow {
+        background-color: #2d2d2d;
+    }
+
+    /* Меню-бар */
+    QMenuBar {
+        background-color: #222222;
+        color: white;
+        padding: 5px;
+    }
+    QMenuBar::item {
+        background: transparent;
+        padding: 5px 10px;
+        color: white;
+    }
+    QMenuBar::item:selected {
+        background-color: #333333;
+        color: white;
+    }
+    QMenuBar::item:pressed {
+        background-color: #444444;
+        color: white;
+    }
+
+    /* Выпадающие меню */
+    QMenu {
+        background-color: #2a2a2a;
+        border: 1px solid #555555;
+        padding: 5px;
+        margin: 0px;
+        color: white;
+    }
+    QMenu::item {
+        padding: 5px 25px 5px 20px;
+        background-color: transparent;
+        color: white;
+    }
+    QMenu::item:selected {
+        background-color: #444444;
+        color: white;
+    }
+    QMenu::separator {
+        height: 1px;
+        background: #555555;
+        margin: 5px 0px;
+    }
+
+    /* Кнопки */
+    QPushButton {
+        background-color: #2d8b57; /* зелёный */
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        font-weight: bold;
+    }
+    QPushButton:hover {
+        background-color: #3da867;
+    }
+    QPushButton:pressed {
+        background-color: #246f45;
+    }
+
+    /* Поля ввода */
+    QLineEdit {
+        background-color: #333333;
+        color: white;
+        border: 1px solid #555555;
+        padding: 5px;
+        border-radius: 4px;
+    }
+    QLineEdit:focus {
+        border: 1px solid #2d8b57;
+        background-color: #3a3a3a;
+    }
+
+    /* Комбобоксы */
+    QComboBox {
+        background-color: #333333;
+        color: white;
+        border: 1px solid #555555;
+        padding: 5px;
+        border-radius: 4px;
+    }
+    QComboBox::drop-down {
+        border: none;
+    }
+    
+    QComboBox QAbstractItemView {
+        background-color: #2a2a2a;
+        color: white;
+        selection-background-color: #444444;
+        selection-color: white;
+    }
+
+    /* Дата и время */
+    QDateTimeEdit {
+        background-color: #333333;
+        color: white;
+        border: 1px solid #555555;
+        padding: 5px;
+        border-radius: 4px;
+    }
+    QDateTimeEdit::up-button, QDateTimeEdit::down-button {
+        background-color: #444444;
+        border: none;
+        width: 20px;
+    }
+
+    /* Заголовки */
+    QLabel {
+        color: white;
+        font-weight: bold;
+    }
+
+    /* Стиль для групповых рамок */
+    QGroupBox {
+        background-color: #2d2d2d;
+        color: white;
+        border: 1px solid #555555;
+        border-radius: 5px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    QGroupBox::title {
+        subcontrol-origin: margin;
+        left: 10px;
+        padding: 0 5px 0 5px;
+    }
+
+    /* Статус-бар */
+    QStatusBar {
+        background-color: #222222;
+        color: white;
+        padding: 5px;
+    }
