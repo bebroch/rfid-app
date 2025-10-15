@@ -22,12 +22,13 @@ class MainWindow(QMainWindow):
 
     def search_button_clicked(self):
         rfid = self.ui.rfid_input.text() if self.ui.rfid_input.text() != "" else None
-        full_name = self.ui.name_input.text() if self.ui.rfid_input.text() != "" else None
+        full_name = self.ui.name_input.text() if self.ui.name_input.text() != "" else None
 
+        print(full_name)
         is_enter = self.ui.enter_status.currentText()
-        if is_enter == "вход":
+        if is_enter == "Вход":
             is_enter = True
-        elif is_enter == "вход":
+        elif is_enter == "Выход":
             is_enter = False
         else:
             is_enter = None
