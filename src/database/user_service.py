@@ -2,8 +2,8 @@ from dataclasses import dataclass
 import datetime
 import sqlite3
 from sqlite3 import Connection
-from src.database.user import UserTable
-from src.database.access_log import AccessLogTable
+from database.user import UserTable
+from database.access_log import AccessLogTable
 
 
 @dataclass
@@ -51,8 +51,8 @@ class UserService:
         query = """
             SELECT rfid, full_name, is_enter, date FROM access_logs
             JOIN users ON access_logs.user_rfid = users.rfid
-            WHERE rfid = COALESCE(?, rfid)
-            AND full_name = COALESCE(?, full_name)
+            WHERE rfid LIKE '%' || COALESCE(?, rfid) || '%'
+            AND full_name LIKE '%' || COALESCE(?, full_name) || '%'
             AND is_enter = COALESCE(?, is_enter)
             AND date BETWEEN COALESCE(?, date) AND COALESCE(?, date)
             ORDER BY date DESC;

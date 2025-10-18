@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "",
     "scripts": {
-        "start": "python -B ./src/app.py",
+        "start": "python -B ./src/main.py",
         "ui_compile": "pyuic6 ./src/ui/main_window.ui -o ./src/ui/main_window.py",
         "setup_venv": "python -m venv packenv",
         "fill_users": "python -B ./scripts/fill_users.py"
