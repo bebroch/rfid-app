@@ -30,13 +30,9 @@ class MainWindow(QMainWindow):
         )
 
         print(full_name)
-        is_enter = self.ui.enter_status.currentText()
-        if is_enter == "Вход":
-            is_enter = True
-        elif is_enter == "Выход":
-            is_enter = False
-        else:
-            is_enter = None
+        is_enter = {"Вход": True, "Выход": False, "Нет значения": None}[
+            self.ui.enter_status.currentText()
+        ]
 
         if self.ui.interval_wigdet.currentIndex() == 0:
             dateTo = datetime.now()
@@ -55,14 +51,13 @@ class MainWindow(QMainWindow):
                 case "Месяц":
                     dateFrom = dateTo - timedelta(days=30)
                 case _:
-                    dateFrom = None
-                    dateTo = None
+                    dateFrom = dateTo = None
 
         elif self.ui.interval_wigdet.currentIndex() == 1:
             dateFrom = self.ui.datetime_input.dateTime().toPyDateTime()
             dateTo = self.ui.datetime_input_two.dateTime().toPyDateTime()
         else:
-            dateFrom, dateTo = None, None
+            dateFrom = dateTo = None
 
         # TODO убрать
         print(
